@@ -15,7 +15,7 @@ $('#q').bind('focus blur ' , function(e) {
   }
   else {
   	if($(this).val() == labelText) {
-	$(this).val('');
+	    $(this).val('');
     }
   }
 });
