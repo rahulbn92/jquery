@@ -9,12 +9,12 @@ $('label[for="q"]').remove();
 $('#q').bind('focus blur ' , function(e) {
   $(this).toggleClass('hint');
   if(e.type == 'blur') {
-  	if($(this).val() == '') {
+    if($(this).val() == '') {
       $(this).val(labelText);
     }  
   }
   else {
-  	if($(this).val() == labelText) {
+    if($(this).val() == labelText) {
 	    $(this).val('');
     }
   }
