@@ -5,17 +5,17 @@ $('#q').val( labelText);
 $('#q').addClass('hint');
 // removing label 
 $('label[for="q"]').remove();
-// adding focus and blur events to input text
-$('#q').bind('focus blur ' , function(e) {
-  $(this).toggleClass('hint');
-  if(e.type == 'blur') {
-    if($(this).val() == '') {
-      $(this).val(labelText);
-    }  
+// adding blur events to input text
+$('#q').live(' blur ' , function(e) {
+  $(this).addClass('hint');
+  if($(this).val() == '') {
+    $(this).val(labelText);
   }
-  else {
-    if($(this).val() == labelText) {
-      $(this).val('');
-    }
+});
+// adding focus event to input text
+$('#q').live(' focus ' , function(e) {
+ $(this).removeClass('hint');
+  if($(this).val() == labelText) {
+    $(this).val('');
   }
 });
