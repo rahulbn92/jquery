@@ -19,9 +19,9 @@ alert("no of hidden elements are " + hiddenElements.length);
 var labelSearch = $('label[for="q"]');
 alert("text in the search label is  " + labelSearch.html());
 
-// showing list item3 in 3 ways, best way is through direct id because in other cases it is traversing through program for more time than through direct id
+// showing list item3 in 3 ways
 alert("showing list item 3 in 3 ways")
-alert("using direct id  " +$('#myListItem').html());
-alert("using child property  " +$('#myList').children('#myListItem').html());
-alert("using id for a list  " +$('li#myListItem').html())
+alert("using direct id  " +$('#myList li:nth-child(3)').html());
+alert("using child property  " +$('#myList li:eq(2)').html());
+alert("using id for a list  " +$('#myList').children('#myListItem').html())
 alert("best way is through direct id because in other cases it is traversing through program for more time than through direct id");
