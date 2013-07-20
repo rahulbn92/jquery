@@ -13,6 +13,6 @@ $('div.module').last().prepend('<h2>Another Paragraph</h2><p>india is my country
 $('select[name="day"]').append('<option value="wednesday">Wednesday</option>');
 
 // adding new div and appending a image
-$('#specials').after('<div class = "module" id = "newDiv"></div>');
+$('div.module:last').after('<div class = "module" id = "newDiv"></div>');
 var image = $('img:first').attr('src');
-$('div.module').last().append('<img src="' + image + '" />');
+$('div.module:last').append('<img src="' + image + '" />');
