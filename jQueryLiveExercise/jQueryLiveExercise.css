@@ -1,24 +1,24 @@
 #addDiv
 {
-	position:absolute;
-	left:1000px;
-	top: 20px;
+  position:absolute;
+  left:1000px;
+  top: 20px;
 }
 
 #outerDiv
 {
-	width: 400px;
-	margin-left: 100px;
-	border: solid 1px black;
+  width: 400px;
+  margin-left: 100px;
+  border: solid 1px black;
 }
 
 .highlight
 {
-	background-color: yellow;
+  background-color: yellow;
 }
 
 .newDiv
 {
-	font-size: 30px;
-	border: solid 1px black;
+  font-size: 30px;
+  border: solid 1px black;
 }
