@@ -7,12 +7,12 @@ for(var i = 0 ; i < 5 ; i++) {
 $('#myList li:odd').remove();
 
 // appending new h2 and paragraph in div.module2
-$('div.module').last().prepend('<h2>Another Paragraph</h2><p>india is my country and i love india, we should respect our country and should held self for its destruction</p>');
+$('div.module:last').append('<h2>Another Paragraph</h2><p>india is my country and i love india, we should respect our country and should held self for its destruction</p>');
 
 // adding wednesday in selection list
 $('select[name="day"]').append('<option value="wednesday">Wednesday</option>');
 
 // adding new div and appending a image
-$('div.module:last').after('<div class = "module" id = "newDiv"></div>');
-var image = $('img:first').attr('src');
-$('div.module:last').append('<img src="' + image + '" />');
+$('<div class = "module" id = "newDiv"></div>').insertAfter('div.module:last');
+ $('img:first').clone().appendTo('div.module:last');
+
