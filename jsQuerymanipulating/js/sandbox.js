@@ -14,5 +14,5 @@ $('select[name="day"]').append('<option value="wednesday">Wednesday</option>');
 
 // adding new div and appending a image
 $('<div class = "module" id = "newDiv"></div>').insertAfter('div.module:last');
- $('img:first').clone().appendTo('div.module:last');
+$('img:first').clone().appendTo('div.module:last');
 
