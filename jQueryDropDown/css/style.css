@@ -187,6 +187,10 @@ body {
 	display: none;
 	margin: 0;
 }
+#nav li ul.hover
+{
+	display: block;
+}
 
 #nav li ul li {
 	float: none;
