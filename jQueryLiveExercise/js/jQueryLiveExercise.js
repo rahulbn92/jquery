@@ -6,8 +6,7 @@ $(document).ready(function(){
 function addNewDiv() {
   var count = 1;
   $('#addDiv').click(function() {
-    $('#outerDiv').prepend("<div id=div"+count+">DIV" + count + "</div>");
-    $('#outerDiv').children('#div'+count+'').addClass('newDiv');
+    $('#outerDiv').prepend("<div class=newDiv id=div"+count+">DIV" + count + " </div>");
     count++;
   });
   $('#outerDiv').delegate('div' , 'click' , function() {
