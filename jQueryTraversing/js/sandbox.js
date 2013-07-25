@@ -10,7 +10,7 @@ console.log("class added to form with search input box is  " +$('#search').attr(
 
 // adds current class to sixth li and removes from the fifth li
 $('li.current').next().addClass('current')
-$("li.current:first").removeClass()
+               .prev().removeClass('current');
 console.log("after adding and removing class from li , the main list looks like  "  +$('#myList').html());
 
 // traversing to go button from select with name ="day"
