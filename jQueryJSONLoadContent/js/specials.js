@@ -1,10 +1,10 @@
 $(document).ready(function(){
-  var $newDiv = $('<div></div>').insertAfter($('#specials form'));
-  $('select[name="day"]').data('newDiv' ,$newDiv);
   loadJSON();
 });
 
 function loadJSON () {
+  var $newDiv = $('<div></div>').insertAfter($('#specials form'));
+  $('select[name="day"]').data('newDiv' ,$newDiv);
   var jsonObject 
   $.ajax({ url:"specials.json" , success:function(data) {
     jsonObject = data;
