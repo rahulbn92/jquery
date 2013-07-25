@@ -10,7 +10,7 @@ $('div.module').each(function(i) {
 $('#newUl li').bind('click' , function() {
   $('div.module:eq(' + $(this).attr("id") + ')').show()
     .siblings('div.module').hide();
-$(this).addClass('current')
-  .siblings().removeClass('current');
+  $(this).addClass('current')
+    .siblings().removeClass('current');
 });
 $('div.module:eq(0)').show();
