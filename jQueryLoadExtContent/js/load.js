@@ -6,7 +6,8 @@ $(document).ready(function() {
   //adding click function to h3 elements
   $('div.module h3').click(function(e) {
     e.preventDefault();
-    $(this).data('newDiv').load($(this).children('a').attr('href'));
+    var link = $(this).find('a').attr('href').split('#').join(" #");
+    $(this).data('newDiv').load(link);
   });
 });
 
