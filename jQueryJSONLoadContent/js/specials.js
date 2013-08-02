@@ -6,7 +6,7 @@ function loadJSON () {
   var $newDiv = $('<div/>').insertAfter($('#specials form'));
   $('select[name="day"]').data('newDiv', $newDiv);
   var jsonObject 
-  $.ajax({ url:"specials.json" , success:function(data) {
+  $.ajax({ url:"specials.json" , dataType:  'json', success:function(data) {
     jsonObject = data;
   }});
   $('select[name="day"]').change(function() {
