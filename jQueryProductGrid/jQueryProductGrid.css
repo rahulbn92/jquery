@@ -1,0 +1,16 @@
+#mainBox
+{
+  height: auto;
+  width: 600px;
+  border: solid 1px black;
+  position: relative;
+  left: 200px;
+  top: -400px;
+}
+
+img
+{
+  height: 100px;
+  width: 120px;
+}
+
