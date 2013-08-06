@@ -17,9 +17,9 @@ function showProducts() {
     var $rating = $(this);
     $('.ratings').removeClass('highlight');
     $rating.addClass('highlight');
-    $('input[type="radio"][name="' + $item.attr('id') + '"]').prop('disabled', true);
-    $('input[type="radio"][name="' + $item.attr('id') + '"][value ="' + $rating.attr('id') + '"]').prop('checked', true);
-    $('input[type="radio"]:checked').prop('disabled', false);
+    $('input[type="radio"][name="' + $item.attr('id') + '"]').prop('disabled', true)
+    $('input[type="radio"][name="' + $item.attr('id') + '"][value ="' + $rating.attr('id') + '"]').prop('checked', true)
+                                                                                                  .prop('disabled', false);
   });
 }
 
